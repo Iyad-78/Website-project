@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - Chocolaterie La Gourmandise</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <script type="text/javascript" src="../js/script.js"></script>
+
+</head>
+<body>
+  <header>
+    <h1>Chocolaterie La Gourmandise</h1>
+    <img src="../img/logo.png" alt="Logo de la Chocolaterie La Gourmandise" width="200" height="200">
+    <nav>
+        <ul>
+            <li><a href="../ACCUEIL.html">Accueil</a></li>
+            <li><a href="Blanc.html">Chocolat blanc</a></li>
+            <li><a href="Lait.html">Chocolat au lait</a></li>
+			<li><a href="noir.html">Chocolat noir</a></li>
+			<li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+  </header>
+  <main>
+   <h2>Demande de contact </h2>
+      <p>N'hésitez pas à nous contacter si vous avez des questions, des suggestions ou si vous rencontrez des difficultés avec votre commande.</p>
+      <form action="contact.php" method="post">
+       <label for="date_contact">Date de contact :</label>
+        <input type="date" id="date_contact" name="date_contact">       
+        <br>
+
+        <label for="nom">Nom :</label>
+        <input type="text" id="nom" name="nom" required>
+        <br>
+        <label for="prénom">Prénom :</label>
+        <input type="text" id="prénom" name="prénom" required>
+        <br>
+        
+        <label for="email">Email :</label>
+        <input type="email" id="email" name="email" required>
+        <br>
+
+        <label for="genre">Genre :</label>
+        <select id="genre" name="genre">
+          <option value="femme">Femme</option>
+          <option value="homme">Homme</option>
+        </select>
+        <br>
+
+        <label for="date_naissance">Date de Naissance :</label>
+        <input type="date" id="date_naissance" name="date_naissance">
+        <br>
+
+        <label for="fonction">Fonction :</label>
+        <input type="text" id="fonction" name="fonction">
+        <br>
+
+        <label for="sujet">Sujet :</label>
+        <input type="text" id="sujet" name="sujet">
+        <br>
+
+        <label for="message">Message :</label>
+        <br>
+        <textarea id="message" name="message" rows="10" cols="30" required></textarea>
+        <br>
+
+        <button type="submit">Envoyer</button>
+      </form>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2024 Chocolaterie La Gourmandise</p>
+    <a href="../ACCUEIL.html">Accueil</a>
+  </footer>
+</body>
+</html>

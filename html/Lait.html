@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chocolat au lait - Chocolaterie La Gourmandise</title>
+  <link rel="stylesheet" href="../css/styleblanc.css">
+  <script src="../js/script.js" defer></script> <!-- Ajout du script JavaScript -->
+
+</head>
+<body>
+  <header>
+    <h1>Chocolaterie La Gourmandise</h1>
+    <img src="../img/logo.png" alt="Logo de la Chocolaterie La Gourmandise" width="200" height="200">
+    <nav>
+        <ul>
+            <li><a href="../ACCUEIL.html">Accueil</a></li>
+            <li><a href="Blanc.html">Chocolat blanc</a></li>
+            <li><a href="Lait.html">Chocolat au lait</a></li>
+			<li><a href="noir.html">Chocolat noir</a></li>
+			<li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="header-icones"> <!-- Ajout de l'icone panier -->
+      <a href="../html/panier.html" class="panier-icone">
+        <img src="../img/panier.png" alt="Panier" width="200" height="200>
+        <span class="panier-texte">Panier</span>
+      </a>
+    </div>
+  </header>
+  <main>
+    <section>
+      <h2>Chocolat au lait</h2>
+      <p>Découvrez notre sélection de chocolats au lait, fabriqués avec du cacao de qualité supérieure et du lait frais.</p>
+    </section>
+    <section>
+      <h2>Nos produits</h2>
+      <button id="toggleStock">Stock</button> <!-- Bouton pour afficher/cacher la colonne de la quantité en stock -->
+      <ul id="productList">        
+        <li>
+          <a href="../img/lait/chocolat_lait_fruit.jpg"> <!-- Zoomer l'image -->
+            <img src="../img/lait/chocolat_lait_fruit.jpg" alt="Chocolat au lait aux fruit" width="200" height="180">
+          </a>
+          <h3>Chocolat au lait aux fruits</h3>
+          <p>Un chocolat au lait onctueux et savoureux, agrémenté de fruits savoureux.</p>
+          <p>Prix : 10€</p>
+          <button class="decrease">-</button> <!-- Bouton pour diminuer la quantité -->
+          <input type="number" class="quantity" value="0" min="0"> <!-- Input pour la quantité commandée -->
+          <button class="increase">+</button> <!-- Bouton pour augmenter la quantité -->
+          <p class="stock">20</p> <!-- Affichage de la quantité en stock -->
+          <a href="#" class="add-to-cart">Ajouter au panier</a>
+        </li>
+        <li>
+          <a href="../img/lait/chocolat_lait_caramel.jpg"> <!-- Zoomer l'image -->
+            <img src="../img/lait/chocolat_lait_caramel.jpg" alt="Chocolat au lait aux caramel" width="200" height="180">
+          </a>
+          <h3>Chocolat au lait aux caramel</h3>
+          <p>Un chocolat au lait délicat et parfumé, avec du caramel onctueux.</p>
+          <p>Prix : 12€</p>
+          <button class="decrease">-</button> <!-- Bouton pour diminuer la quantité -->
+          <input type="number" class="quantity" value="0" min="0"> <!-- Input pour la quantité commandée -->
+          <button class="increase">+</button> <!-- Bouton pour diminuer la quantité -->
+          <p class="stock">20</p> <!-- Affichage de la quantité en stock -->
+          <a href="#" class="add-to-cart">Ajouter au panier</a>
+        </li>
+        <li>
+          <a href="../img/lait/chocolat_lait_nature.jpg"> <!-- Zoomer l'image -->
+            <img src="../img/lait/chocolat_lait_nature.jpg" alt="Chocolat au lait nature" width="200" height="180">
+          </a>
+          <h3>Chocolat au lait nature</h3>
+          <p>Un chocolat au lait simple et savoureux, à la saveur pure et authentique.</p>
+          <p>Prix : 8€</p>
+          <button class="decrease">-</button> <!-- Bouton pour diminuer la quantité -->
+          <input type="number" class="quantity" value="0" min="0"> <!-- Input pour la quantité commandée -->
+          <button class="increase">+</button> <!-- Bouton pour diminuer la quantité -->
+          <p class="stock">20</p> <!-- Affichage de la quantité en stock -->
+          <a href="#" class="add-to-cart">Ajouter au panier</a>
+        </li>
+        <li>
+          <a href="../img/lait/chocolat_lait_noisette.jpg"> <!-- Zoomer l'image -->
+            <img src="../img/lait/chocolat_lait_noisette.jpg" alt="Chocolat lait noisette" width="200" height="180">
+          </a>
+          <h3>Chocolat au lait à la noisette</h3>
+          <p>Un chocolat au lait gourmand et parfumé, avec des éclats de noisette.</p>
+          <p>Prix : 9€</p>
+          <button class="decrease">-</button> <!-- Bouton pour diminuer la quantité -->
+          <input type="number" class="quantity" value="0" min="0"> <!-- Input pour la quantité commandée -->
+          <button class="increase">+</button> <!-- Bouton pour diminuer la quantité -->
+          <p class="stock">20</p> <!-- Affichage de la quantité en stock -->
+          <a href="#" class="add-to-cart">Ajouter au panier</a>
+        </li>
+        <li>
+          <a href="../img/lait/chocolat_lait_praline.jpg"> <!-- Zoomer l'image -->
+            <img src="../img/lait/chocolat_lait_praline.jpg" alt="Chocolat au lait praliné" width="200" height="180">
+          </a>
+          <h3>Chocolat au lait praliné</h3>
+          <p>Un chocolat au lait onctueux et fondant, avec une ganache praliné irrésistible.</p>
+          <p>Prix : 11€</p>
+          <button class="decrease">-</button> <!-- Bouton pour diminuer la quantité -->
+          <input type="number" class="quantity" value="0" min="0"> <!-- Input pour la quantité commandée -->
+          <button class="increase">+</button> <!-- Bouton pour diminuer la quantité -->
+          <p class="stock">20</p> <!-- Affichage de la quantité en stock -->
+          <a href="#" class="add-to-cart">Ajouter au panier</a>
+        </li>
+      </ul>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2024 Chocolaterie La Gourmandise</p>
+    <a href="../html/contact.html">Contact</a>
+  </footer>
+</body>
+</html>
